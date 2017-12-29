@@ -1,0 +1,14 @@
+version: '2'
+services:
+  fabric:
+    build: ./
+    stdin_open: true
+    image: docker-fabric-mininet
+    network_mode: "bridge"
+    restart: "always"
+    privileged: true
+    environment:
+      - FABRIC_SPINE=2  # Number of spine switches
+      - FABRIC_LEAF=2   # Number of leaf switches
+      - FABRIC_FANOUT=2 # Number of hosts per leaf
+      - FABRIC_CONTROLLER=$CONT1 # Comma-separated controller IP address
