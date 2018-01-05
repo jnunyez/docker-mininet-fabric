@@ -15,10 +15,10 @@ Run container exposing container GUI ONOS port and ONOS console to localhost:
 docker run  -t -d -p 8085:8181 -p 8086:8101 --name onos1 onosproject/onos
 ```
 
-GUI accessible in localhost:8085. Access ONOS console (localhost:8086 user:onos/passwd:rocks):
+GUI accessible in localhost:8085. Access ONOS console within container (localhost:8086 user:onos/passwd:rocks):
 
 ```
-ssh -p 8086 karaf@172.17.0.2 (passwd: karaf)
+ssh -p 8086 karaf@localhost (passwd: karaf)
 ```
 
 From: onos console>
