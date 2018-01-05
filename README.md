@@ -31,6 +31,12 @@ onos> app activate org.onosproject.fwd
 ### Data plane emulation Container
 
 Edit docker-compose.yml to specify number of ONOS controllers when testing clustering and number of leaf, spines and hosts.
+Specify IP address of the ONOS controller:
+```
+export CONTROLLER="172.17.0.2"
+```
+
+Build the data plane emulator container (based on ubuntu 14.04):
 
 ```
 docker-compose build fabric
