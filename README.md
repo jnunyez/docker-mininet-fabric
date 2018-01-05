@@ -1,4 +1,4 @@
-# docker-mininet-fabric hosted by Hyperkit light VM for MAC
+# docker-mininet-fabric hosted by Hyperkit light VM 
 A container for mininet-based DC topologies controlled by ONOS.
 
 ### ONOS docker container
